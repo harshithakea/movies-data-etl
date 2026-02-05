@@ -12,7 +12,7 @@ def main():
 	df["total_amount"]=df["quantity"]*df["price"]
 
 	print(df)
-	output_path = "data/processed/movies_processed.csv"
+	output_path = "/home/ubuntu/movies-data-etl/data/processed/movies_processed.csv"
 	df.to_csv(output_path, index=False)
 
 	print(f"Processed data saved to {output_path}")
